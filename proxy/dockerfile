@@ -1,0 +1,3 @@
+FROM nginx
+COPY route.conf.template /etc/nginx/templates/route.conf.template
+EXPOSE 80

@@ -1,0 +1,7 @@
+server {
+  listen 8080;
+  server_name localhost api.*/automate;
+  location /api/ {
+    proxy_pass http://${AUTO_MATE_URL}/;
+  }
+}

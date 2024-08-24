@@ -1,0 +1,21 @@
+services:
+  proxy:
+    build: ./proxy
+    ports:
+      - "80:8080"
+    environment:
+      AUTO_MATE_URL: automate:3000
+  automate:
+    image: nathan2hao/auto.mate:latest
+    ports:
+      - "3000:3000"
+  ai:
+    image: lobehub/lobe-chat
+    ports:
+      - "3210:3210"
+    environment:
+      OPENAI_API_KEY: "sk-xxxxxx"
+      ACCESS_CODE: "xxxxxx"
+      OPENAI_MODEL_LIST: "gpt-3.5-turbo"
+
+
