@@ -17,5 +17,6 @@ services:
       OPENAI_API_KEY: "sk-xxxxxx"
       ACCESS_CODE: "xxxxxx"
       OPENAI_MODEL_LIST: "gpt-3.5-turbo"
+      AI_URL: ai:3210
 
 

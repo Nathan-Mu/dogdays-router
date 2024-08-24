@@ -4,4 +4,8 @@ server {
   location /api/ {
     proxy_pass http://${AUTO_MATE_URL}/;
   }
+  server_name localhost ai.*;
+  location / {
+    proxy_pass http://${AI_URL}/;
+  }
 }
