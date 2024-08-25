@@ -20,5 +20,6 @@ services:
       ACCESS_CODE: ${ASK_ACCESS_CODE}
       OPENAI_MODEL_LIST: "gpt-3.5-turbo"
       AI_URL: ai:3210
-
+volumes:
+  automate-uploads:
 
